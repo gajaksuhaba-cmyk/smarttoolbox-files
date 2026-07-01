@@ -1,4 +1,3 @@
-
 // ─── NAVIGATION ──────────────────────────────────────────────────────────────
 function filterTools(q){
   q=q.toLowerCase();
@@ -1349,4 +1348,3 @@ function calcReadTime(){
   <div class="info-row"><span class="info-label">Speaking Time</span><span class="info-val">${Math.ceil(words/130)} min (at 130 wpm)</span></div>
   <div class="info-row"><span class="info-label">Character Count</span><span class="info-val">${text.length.toLocaleString()}</span></div>`;
 }
-
