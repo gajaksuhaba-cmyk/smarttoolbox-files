@@ -59,6 +59,22 @@ document.addEventListener('DOMContentLoaded',function(){
   // Modal overlay (click outside to close)
   const overlay=document.getElementById('modalOverlay');
   if(overlay)overlay.addEventListener('click',handleOverlayClick);
+
+  // ─── PAGE NAVIGATION (Blogger strips external hrefs on save, so we set them via JS) ──
+  var PAGES={
+    'about':'https://smarttoolbox30.blogspot.com/p/about-us.html',
+    'privacy':'https://smarttoolbox30.blogspot.com/p/privacy-policy.html',
+    'contact':'https://smarttoolbox30.blogspot.com/p/contact-us.html',
+    'disclaimer':'https://smarttoolbox30.blogspot.com/p/disclaimer.html',
+    'blog':'https://smarttoolbox30.blogspot.com/'
+  };
+  document.querySelectorAll('[data-page]').forEach(function(link){
+    var key=link.getAttribute('data-page');
+    if(PAGES[key]){
+      link.href=PAGES[key];
+      link.target='_self';
+    }
+  });
 });
 
 // ─── COPY HELPER ─────────────────────────────────────────────────────────────
