@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded',function(){
     'privacy':'https://smarttoolbox30.blogspot.com/p/privacy-policy.html',
     'contact':'https://smarttoolbox30.blogspot.com/p/contact-us.html',
     'disclaimer':'https://smarttoolbox30.blogspot.com/p/disclaimer.html',
-    'blog':'https://smarttoolbox30.blogspot.com/'
+    'blog':'https://smarttoolbox30.blogspot.com/search'
   };
   document.querySelectorAll('[data-page]').forEach(function(link){
     var key=link.getAttribute('data-page');
